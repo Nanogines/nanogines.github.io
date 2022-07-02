@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SUPER SPECIAL GIFT!</title>
+</head>
+
+<body>
+  <h3>Hey there. Happy Birthday!</h3>
+  <p>
+    Firstly,
+  </p>
+
+  <img src="joey.gif" alt="How you doin">
+  <br><br>
+  <input type="text">
+  <br><br>
+  <img src="mike.png">
+  <p>Secondly...</p>
+  <br>
+  <br>
+  <br>
+  <h1>SUPER SPECIAL GIFT FOR SUPER SPECIAL RISH! 😚😚😚</h1>
+  <h5>
+    <strong>*SPOLER ALERT*</strong> A LOOOOOOOOOOOOOT OF EFFORT WENT INTO THIS
+  </h5>
+  <div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
+    <div class="inline-block">
+      <img src="jh.gif" id="jh" style="visibility:hidden">
+    </div>
+    <div class="inline-block">
+      <button onclick="playPause()">Play/Pause</button>
+      <button onclick="makeBig()">Big</button>
+      <button onclick="makeSmall()">Small</button>
+      <button onclick="makeNormal()">Normal</button>
+      <br><br>
+      <video id="video1" width="420">
+        <source src="v.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+    </div>
+    <div class="inline-block">
+      <img src="ts.gif" id="ts" style="visibility:hidden">
+    </div>
+  </div>
+  <div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
+    <div class="inline-block">
+      <img src="holt.png" id="holt" style="visibility:hidden">
+    </div>
+    <div class="inline-block">
+      <img src="jp.png" id="jp" style="visibility:hidden">
+    </div>
+
+    <script>
+      var myVideo = document.getElementById("video1");
+      var img1 = document.getElementById('jh');
+      var img2 = document.getElementById('ts');
+      var img3 = document.getElementById('holt');
+      var img4 = document.getElementById('jp');
+
+      function playPause() {
+        if (myVideo.paused) {
+          myVideo.play();
+          img1.style.visibility = "visible";
+          img2.style.visibility = "visible";
+          img3.style.visibility = "visible";
+          img4.style.visibility = "visible";
+        } else
+          myVideo.pause();
+      }
+
+      function makeBig() {
+        myVideo.width = 560;
+      }
+
+      function makeSmall() {
+        myVideo.width = 320;
+      }
+
+      function makeNormal() {
+        myVideo.width = 420;
+      }
+    </script>
+</body>
+
+</html>
